@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 2/recognizeEq.c
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+scanner.h
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 2/scanner.h
+recognizeEq.h
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 2/recognizeEq.h
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 2/recognizeEq.h
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 2/scanner.h
+

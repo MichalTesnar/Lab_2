@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = "C:\Users\micha\Documents\GitHub\RUG-Algorithms-and-Datastruc
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Lab_2.dir/all
+all: CMakeFiles/recognition.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -70,34 +70,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Lab_2.dir/clean
+clean: CMakeFiles/recognition.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Lab_2.dir
+# Target rules for target CMakeFiles/recognition.dir
 
 # All Build rule for target.
-CMakeFiles/Lab_2.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\micha\Documents\GitHub\RUG-Algorithms-and-Datastructures\Lab 2\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Lab_2"
-.PHONY : CMakeFiles/Lab_2.dir/all
+CMakeFiles/recognition.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Users\micha\Documents\GitHub\RUG-Algorithms-and-Datastructures\Lab 2\cmake-build-debug\CMakeFiles" --progress-num=1,2,3,4 "Built target recognition"
+.PHONY : CMakeFiles/recognition.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Lab_2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\micha\Documents\GitHub\RUG-Algorithms-and-Datastructures\Lab 2\cmake-build-debug\CMakeFiles" 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Lab_2.dir/all
+CMakeFiles/recognition.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\micha\Documents\GitHub\RUG-Algorithms-and-Datastructures\Lab 2\cmake-build-debug\CMakeFiles" 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/recognition.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\micha\Documents\GitHub\RUG-Algorithms-and-Datastructures\Lab 2\cmake-build-debug\CMakeFiles" 0
-.PHONY : CMakeFiles/Lab_2.dir/rule
+.PHONY : CMakeFiles/recognition.dir/rule
 
 # Convenience name for target.
-Lab_2: CMakeFiles/Lab_2.dir/rule
-.PHONY : Lab_2
+recognition: CMakeFiles/recognition.dir/rule
+.PHONY : recognition
 
 # clean rule for target.
-CMakeFiles/Lab_2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/clean
-.PHONY : CMakeFiles/Lab_2.dir/clean
+CMakeFiles/recognition.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/clean
+.PHONY : CMakeFiles/recognition.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

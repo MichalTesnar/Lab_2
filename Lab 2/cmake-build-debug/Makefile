@@ -116,41 +116,89 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Lab_2
+# Target rules for targets named recognition
 
 # Build rule for target.
-Lab_2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Lab_2
-.PHONY : Lab_2
+recognition: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 recognition
+.PHONY : recognition
 
 # fast build rule for target.
-Lab_2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/build
-.PHONY : Lab_2/fast
+recognition/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/build
+.PHONY : recognition/fast
 
-main.obj: main.c.obj
-.PHONY : main.obj
+mainRecog.obj: mainRecog.c.obj
+.PHONY : mainRecog.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/main.c.obj
-.PHONY : main.c.obj
+mainRecog.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/mainRecog.c.obj
+.PHONY : mainRecog.c.obj
 
-main.i: main.c.i
-.PHONY : main.i
+mainRecog.i: mainRecog.c.i
+.PHONY : mainRecog.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/main.c.i
-.PHONY : main.c.i
+mainRecog.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/mainRecog.c.i
+.PHONY : mainRecog.c.i
 
-main.s: main.c.s
-.PHONY : main.s
+mainRecog.s: mainRecog.c.s
+.PHONY : mainRecog.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Lab_2.dir\build.make CMakeFiles/Lab_2.dir/main.c.s
-.PHONY : main.c.s
+mainRecog.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/mainRecog.c.s
+.PHONY : mainRecog.c.s
+
+recognizeEq.obj: recognizeEq.c.obj
+.PHONY : recognizeEq.obj
+
+# target to build an object file
+recognizeEq.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/recognizeEq.c.obj
+.PHONY : recognizeEq.c.obj
+
+recognizeEq.i: recognizeEq.c.i
+.PHONY : recognizeEq.i
+
+# target to preprocess a source file
+recognizeEq.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/recognizeEq.c.i
+.PHONY : recognizeEq.c.i
+
+recognizeEq.s: recognizeEq.c.s
+.PHONY : recognizeEq.s
+
+# target to generate assembly for a file
+recognizeEq.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/recognizeEq.c.s
+.PHONY : recognizeEq.c.s
+
+scanner.obj: scanner.c.obj
+.PHONY : scanner.obj
+
+# target to build an object file
+scanner.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/scanner.c.obj
+.PHONY : scanner.c.obj
+
+scanner.i: scanner.c.i
+.PHONY : scanner.i
+
+# target to preprocess a source file
+scanner.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/scanner.c.i
+.PHONY : scanner.c.i
+
+scanner.s: scanner.c.s
+.PHONY : scanner.s
+
+# target to generate assembly for a file
+scanner.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\recognition.dir\build.make CMakeFiles/recognition.dir/scanner.c.s
+.PHONY : scanner.c.s
 
 # Help Target
 help:
@@ -160,10 +208,16 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Lab_2
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... recognition
+	@echo ... mainRecog.obj
+	@echo ... mainRecog.i
+	@echo ... mainRecog.s
+	@echo ... recognizeEq.obj
+	@echo ... recognizeEq.i
+	@echo ... recognizeEq.s
+	@echo ... scanner.obj
+	@echo ... scanner.i
+	@echo ... scanner.s
 .PHONY : help
 
 
