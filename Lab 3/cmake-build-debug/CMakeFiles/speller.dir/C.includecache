@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/dictionary.h
+stdbool.h
+-
+trie.h
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/trie.h
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/speller.c
+ctype.h
+-
+stdio.h
+-
+string.h
+-
+dictionary.h
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/dictionary.h
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/trie.c
+trie.h
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/trie.h
+stdlib.h
+-
+stdio.h
+-
+
+C:/Users/micha/Documents/GitHub/RUG-Algorithms-and-Datastructures/Lab 3/trie.h
+stdbool.h
+-
+

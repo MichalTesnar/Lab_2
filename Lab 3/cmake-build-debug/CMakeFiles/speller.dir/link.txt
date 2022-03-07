@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\speller.dir/objects.a
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\ar.exe cr CMakeFiles\speller.dir/objects.a @CMakeFiles\speller.dir\objects1.rsp
+C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\speller.dir/objects.a -Wl,--no-whole-archive -o speller.exe -Wl,--out-implib,libspeller.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\speller.dir\linklibs.rsp
