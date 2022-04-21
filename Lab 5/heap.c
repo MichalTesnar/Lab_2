@@ -13,7 +13,7 @@
 
 void doubleHeapSize(Heap *hp) {
   // creating arrays of double size
-  int *newArr = malloc((hp->size) * 2 * sizeof(int));
+  double *newArr = malloc((hp->size) * 2 * sizeof(double));
   int *newCityArr = malloc((hp->size) * 2 * sizeof(int));
   // copying the content to the doubled arrrays
   for (int i = 0; i < hp->size; i++) {
@@ -30,8 +30,8 @@ void doubleHeapSize(Heap *hp) {
 void upheap(Heap *hp, int n) {
   int parent = n / 2;
   if (n > 1 && hp->array[n] < hp->array[parent]) { // if upheap is needed swap corresponding values
-    swap(&(hp->array[n]), &(hp->array[parent]));
-    swap(&(hp->cityNumber[n]), &(hp->cityNumber[parent]));
+    doubleSwap(&(hp->array[n]), &(hp->array[parent]));
+    intSwap(&(hp->cityNumber[n]), &(hp->cityNumber[parent]));
     upheap(hp, parent);
   }
 }
@@ -48,8 +48,8 @@ void downheap(Heap *hp, int n) {
     indexMax = 2 * n + 1;
   }
   if (indexMax != n) { // we have not passed any conditions, we are at the right node
-    swap(&(hp->array[n]), &(hp->array[indexMax]));
-    swap(&(hp->cityNumber[n]), &(hp->cityNumber[indexMax]));
+    doubleSwap(&(hp->array[n]), &(hp->array[indexMax]));
+    intSwap(&(hp->cityNumber[n]), &(hp->cityNumber[indexMax]));
     downheap(hp, indexMax); // propagate further
   }
 }
@@ -57,7 +57,7 @@ void downheap(Heap *hp, int n) {
 // initialising a heap
 Heap makeHeap() {
   Heap h;
-  h.array = malloc(1 * sizeof(int));
+  h.array = malloc(1 * sizeof(double));
   assert(h.array != NULL);
   h.cityNumber = malloc(1 * sizeof(int));
   assert(h.cityNumber != NULL);
@@ -76,7 +76,7 @@ void heapEmptyError() {
 }
 
 // add new element to the heap
-void enqueue(int n, Heap *hp, int city) {
+void enqueue(double n, Heap *hp, int city) {
   int fr = hp->front;
   if (fr == hp->size) {
     doubleHeapSize(hp);
@@ -101,8 +101,14 @@ int removeMin(Heap *hp) {
   return n;
 }
 
-void swap(int *a, int *b) {
+void intSwap(int *a, int *b) {
   int temp = *a;
+  *a = *b;
+  *b = temp;
+}
+
+void doubleSwap(double *a, double *b) {
+  double temp = *a;
   *a = *b;
   *b = temp;
 }
@@ -114,7 +120,7 @@ void freeHeap(Heap hp) {
 
 void printHeap(Heap hp) {
   for (int idx = 1; idx < hp.front; ++idx) {
-    printf("%d ", hp.array[idx]);
+    printf("%f ", hp.array[idx]);
   }
   printf("\n");
   for (int idx = 1; idx < hp.front; ++idx) {

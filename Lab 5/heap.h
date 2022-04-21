@@ -17,7 +17,7 @@
 #include <assert.h>
 
 typedef struct Heap {
-  int *array; // weights of connections
+  double *array; // weights of connections
   int *cityNumber; // identifiers of cities
   int front;
   int size;
@@ -25,13 +25,14 @@ typedef struct Heap {
 
 void doubleHeapSize (Heap *hp);
 int removeMin(Heap *hp);
-void enqueue(int n, Heap *hp, int city);
+void enqueue(double n, Heap *hp, int city);
 void heapEmptyError();
 int isEmptyHeap(Heap h);
 Heap makeHeap();
 void upheap(Heap *hp, int n);
 void downheap(Heap *hp, int n);
-void swap(int *a, int *b);
+void doubleSwap(double *a, double *b);
+void intSwap(int *a, int *b);
 void freeHeap(Heap hp);
 void printHeap(Heap hp);
 void heapSort(int n, int arr[]);
